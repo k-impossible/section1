@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 300px;
+    background-color: #424242;
+    color: white;
+    border-radius: 10px;
+}
+#display-con{
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 10px;
+    padding: 10px;
+    font-weight: lighter;
+    overflow-wrap: anywhere;
+}
+#display-con span{
+    min-height: 30px;
+    display: inline-block;
+}
+
+#display-con p {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+#number-con{
+    display: flex;
+    flex-direction: column;
+}
+#number-con div{
+    display: flex;
+    border-bottom: 1px solid #424242;
+}
+#number-con div:last-child{
+    border: none;
+}
+#number-con div .buttons:last-child{
+    border: none;
+}
+.buttons{
+    display: flex;
+    background-color: gray;
+    flex: 1;
+    justify-content: center;
+    height: 4rem;
+    align-items: center;
+    font-size: 1.3rem;
+    border-right: 1px solid #424242;
+}
+#zero-btn{
+    border-radius: 0 0 0 10px;
+    flex: 2;
+    padding-right: 1px;
+}
+#enter-btn{
+    border-radius: 0 0 10px 0;
+}
+.symbols-1{
+    background-color: #616161;
+}
+.symbols-2{
+    background: #FF9800;
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.buttons:active {
+    opacity: 0.8;
+}
